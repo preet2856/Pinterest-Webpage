@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#poster {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #ab8f97;
+}
+
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    height: 75%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    background-color: #bea5ab;
+}
+
+#part1 {
+    width: 26%;    
+    height: 100%;
+}
+
+#part2 {
+    width: 63%;    
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0, 208, 255);
+    background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3000&q=80);
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #bea5ab53;
+}
+
+#part3 {
+    width: 7%;    
+    height: 100%;
+}
+
+#text-div {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 350px;
+    /* height: 300px; */
+    transform: translate(0, -50%);
+}
+
+#text-div>h1 {
+    color: #fff;
+    font-size: 85px;
+    font-weight: 800;
+    line-height: 78px;
+    letter-spacing: 8px;
+    font-family: roboto , sans-serif;
+    text-transform: uppercase;
+}
+
+#small-img {
+    width: 300px;
+    height: 400px;
+    background-image: url(https://images.unsplash.com/photo-1529680459049-bf0340fa0755?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80);
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    right: 5%;
+    position: absolute;
+    transform: translate(0, -50%);
+}
+
+#vertical-text {
+    position: absolute;
+    transform: rotate(90deg);
+    right: -66.5%;
+    top: -7%;
+    transform-origin: 0% 0%;
+}
+
+#vertical-text>h1 {
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    letter-spacing: 15px;
+    font-family: monument;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+    animation-name: anim;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+#nav {
+    position: absolute;
+    width: 350px;
+    left: 5%;
+    top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav>img {
+    height: 60px;
+}
+
+#nav>h5 {
+    font-size: 20px;
+    font-family: gilroy;
+    color: #fff;
+}
